@@ -1,0 +1,165 @@
+/* Global Styles */
+.title {
+  font-family: 'Delius', cursive;
+  text-align: center;
+  animation: fadeIn linear 2s;
+  font-size: 100px;
+}
+
+.subheading {
+  font-family: 'Delius', cursive;
+  text-align: center;
+}
+
+/* Home */
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: #06c258;}
+}
+.reasons {
+  display: flex;
+  justify-content: space-evenly;
+  animation: fadeIn linear 4s;
+}
+.reasons-container {
+  animation-name: example;
+  animation-duration: 4s;
+  background-color: #06c258;
+  color: white;
+  padding: 100px;
+  font-size: 25px;
+}
+.home-content {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  animation: fadeIn linear 2s;
+}
+
+/* About */
+
+.about {
+  animation: fadeIn linear 2s;
+}
+
+/* Forms */
+
+.form {
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  max-width: 500px; 
+  border: 1px;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+.form input {
+  width: 100%; 
+  clear: 'both'
+}
+
+/* Buttons */
+
+.btn {
+  background-color: #06c258;
+  color: white;
+  border: black;
+}
+
+.btn:hover, .btn:focus {
+  background-color:#1b1c1d;
+  box-shadow: none;
+  color: white;
+}
+
+.show-btn {
+  color: #047483;
+  cursor: pointer;
+}
+
+.show-btn:hover {
+  color:#1b1c1d;
+  text-decoration: underline;
+}
+
+/* Navigation */
+.user-nav, .non-user-nav {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.nav-item {
+  margin-bottom: 40px;
+  background-color: #06c258;
+  border-radius: 5px;
+  padding: 2vw 4vw 2vw 4vw;
+  box-shadow: 0.5vw 0.5vw #1b1c1d;
+  color: white;
+  font-size: 4vh;
+  text-decoration: none;
+  animation-name: example, fadeIn;
+  animation-duration: 4s;
+}
+
+.nav-item:hover {
+  background-color: #1b1c1d;
+  box-shadow: 1vw 1vw #06c258;
+  text-decoration: none;
+}
+
+/* Dashboard */
+
+.dashboard {
+  display: flex;
+  flex-direction: row;
+}
+
+.dashboard-nav {
+  display: flex;
+  flex-direction: column;
+  border: 1px;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+.dashboard-content {
+  align-self: flex-end;
+  border: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.db-button {
+  margin: 5px;
+}
+
+/* Message Dashboard */
+
+.msg {
+  border: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #1b1c1d;
+  color: white;
+  min-height: 250px;
+  height: auto !important;
+  height: 250px;
+}

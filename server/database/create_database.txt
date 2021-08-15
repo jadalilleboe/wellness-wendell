@@ -1,0 +1,5 @@
+CREATE TABLE users (userid varchar(100) PRIMARY KEY, firstname varchar(40), lastname varchar(40), email varchar(40), passwordhash varchar(100), phonenumber varchar(50));
+
+CREATE TABLE messages(messageid varchar(100) PRIMARY KEY, UserID varchar(100), message varchar(300), UTCHours INT, UTCMinutes INT, timeDisplayHours INT, timeDisplayMinutes varchar(4), timeOfDay varchar(2));
+
+ALTER TABLE messages ADD FOREIGN KEY (userid) REFERENCES users(UserID) ON DELETE CASCADE;

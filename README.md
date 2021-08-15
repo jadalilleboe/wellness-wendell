@@ -1,0 +1,3 @@
+Tools/Technologies Used: JavaScript, React, Node.js, Express.js, PostgreSQL, Twilio API, Heroku, Postman, Git, AWS Lambda, HTML/CSS, Bootstrap, Canva
+
+Wellness Wendell is a full stack web application which allows users to sign up for an account and customize wellness messages sent to them via text. I used React and Bootstrap to build the frontend, and Node/Express for the backend. I used Heroku to host the site and the PostgreSQL database. I used AWS Lambda to automate the sending of the text messages. 
